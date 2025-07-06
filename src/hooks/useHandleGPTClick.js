@@ -27,7 +27,7 @@ export const useHandleGPTClick = () => {
     const gptQuery =
       "Recommend Movie Based on the Query :'" +
       rawQuery +
-      "' Only give me 5 Movies with their names in comma separated format in one row. Do not give any other text or explanation. Just the names of the movies separated by commas."
+      "' Only give me 20 Movies with their names in comma separated format in one row. Do not give any other text or explanation. Just the names of the movies separated by commas."
 
     try {
       const chatCompletion = await getGroqChatCompletion(gptQuery)
