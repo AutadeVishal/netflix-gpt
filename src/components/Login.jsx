@@ -69,7 +69,7 @@ const Login = () => {
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black/40" />
-
+    
       {/* Header */}
       <Suspense fallback={<div className="text-white p-4">Loading…</div>}>
         <Header />

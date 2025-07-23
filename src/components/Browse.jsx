@@ -7,6 +7,7 @@ import useNowPlayingMovies from '../hooks/useNowPlayingMovies';
 import usePopularMovies from '../hooks/usePopularMovies';
 import useTopRated from '../hooks/useTopRated';
 const GPTSearch = React.lazy(() => import('./GPTSearch'));
+import DisclaimerBanner from './DisclaimerBanner'
 import { useSelector } from 'react-redux';
 const Browse = () => {
   const showGPTSearch = useSelector((store) => store.gpt.showGPTSearch);

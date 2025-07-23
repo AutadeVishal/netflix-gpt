@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 const  Browse =React.lazy(()=>import('./Browse')) 
 const  Login = React.lazy(()=>import('./Login'));
 import { Suspense } from 'react';
+import DisclaimerBanner from './DisclaimerBanner';
 const appRouter = createBrowserRouter([
   {
     path: '/',
@@ -17,6 +18,7 @@ const appRouter = createBrowserRouter([
 const Body = () => {
   return (
     <div className="font-sans">
+      <DisclaimerBanner/>
       <RouterProvider router={appRouter} />
     </div>
   );
