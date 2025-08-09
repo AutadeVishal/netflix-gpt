@@ -16,7 +16,7 @@ const Header = () => {
   const currLanguage = useSelector((store) => store.config.lang);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {//firebase onAuthStateChanged runs for null user and takes it to "/"
       if (user) {
         const { uid, email, displayName, photoURL } = user;
         dispatch(addUser({ uid, email, displayName, photoURL }));
@@ -31,6 +31,7 @@ const Header = () => {
 
   const handleSignOut = () => {
     signOut(auth).then(() => dispatch(removeUser()));
+    
   };
 
   const handleGPTSearchClick = () => {
