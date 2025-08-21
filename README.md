@@ -1,6 +1,6 @@
 # Netflix-GPT 
 
-Link :https://netflixgpt-e4f5e.web.app Note:Link is not working due to some issues with firebase but you can see demo on  youtube :
+Link :https://netflix-ui-gpt.web.app/browse 
 
 or can use it locally just by doing:
 1.npm install
